@@ -41,6 +41,7 @@
 		49F90C2F2A52156300F06D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49F90C312A52156300F06D93 /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Entitlements.plist; sourceTree = "<group>"; };
 		9352D3CB2CA11CFF005E69A4 /* SkipPlayground_DEBUG.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SkipPlayground_DEBUG.xcconfig; sourceTree = "<group>"; };
+		9352D3CC2CA16140005E69A4 /* SkipPlayground.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = SkipPlayground.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +75,7 @@
 		49F90C1F2A52156200F06D93 = {
 			isa = PBXGroup;
 			children = (
+				9352D3CC2CA16140005E69A4 /* SkipPlayground.xctestplan */,
 				496EB72F2A6AE4DE00C1253C /* README.md */,
 				496EB72F2A6AE4DE00C1253A /* Skip.env */,
 				496EB72F2A6AE4DE00C1253B /* SkipPlayground.xcconfig */,

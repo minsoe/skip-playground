@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "FFF17584-A515-4746-8F02-08D034F65513",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:..",
+        "identifier" : "SkipPlaygroundTests",
+        "name" : "SkipPlaygroundTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:..",
+        "identifier" : "TMDBMovieApiTests",
+        "name" : "TMDBMovieApiTests"
+      }
+    }
+  ],
+  "version" : 1
+}
