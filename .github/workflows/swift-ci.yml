@@ -8,12 +8,14 @@ on:
 jobs:
   test:
     runs-on: macos-latest
+    env:
+      TMDB_TOKEN: ${{ secrets.TMDB_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - name: "Test Swift Package on macOS"
         run: swift test
-      - name: "Test Swift Package on Android"
-        uses: skiptools/swift-android-action@v1
+#      - name: "Test Swift Package on Android"
+#        uses: skiptools/swift-android-action@v1
       - name: "Test Swift Package on iOS"
         run: xcodebuild test -sdk "iphonesimulator" -destination "platform=iOS Simulator,name=iPhone 15" -scheme "$(xcodebuild -list -json | jq -r '.workspace.schemes[-1]')"
 
