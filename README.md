@@ -45,7 +45,7 @@ And, update the configuration in Xcode by following these steps
 1. Go to your project settings by clicking on the project file in the Project Navigator.
 2. Select the project's `info` tab.
 3. Open `Debug` and update the configuration file as the following. 
-[../main/blob/images/xconfig-location.png](https://raw.githubusercontent.com/minsoe/skip-playground/refs/heads/main/images/xconfig-location.png)
+![../main/blob/images/xconfig-location.png](https://raw.githubusercontent.com/minsoe/skip-playground/refs/heads/main/images/xconfig-location.png)
 
 
 ## Running
