@@ -74,7 +74,6 @@
 		49F90C1F2A52156200F06D93 = {
 			isa = PBXGroup;
 			children = (
-				93B50F2C2C9191D800535A42 /* Packages */,
 				496EB72F2A6AE4DE00C1253C /* README.md */,
 				496EB72F2A6AE4DE00C1253A /* Skip.env */,
 				496EB72F2A6AE4DE00C1253B /* SkipPlayground.xcconfig */,
@@ -96,13 +95,6 @@
 				4900101C2BACEA710000DE33 /* Info.plist */,
 			);
 			name = App;
-			sourceTree = "<group>";
-		};
-		93B50F2C2C9191D800535A42 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

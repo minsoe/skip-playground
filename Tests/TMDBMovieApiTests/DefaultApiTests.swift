@@ -22,7 +22,7 @@ final class DefaultApiTests: XCTestCase {
         let host = "https://api.themoviedb.org"
         let token = String.random
         
-        let api = DefaultApi(host: host, token: token, httpClient: client)
+        let api = DefaultApi(token: token, httpClient: client)
         
         let movies = try await api.get(movieType: MovieType.popular, page: 1)
         
@@ -39,7 +39,7 @@ final class DefaultApiTests: XCTestCase {
         let host = "https://api.themoviedb.org"
         let token = String.random
         
-        let api = DefaultApi(host: host, token: token, httpClient: client)
+        let api = DefaultApi(token: token, httpClient: client)
         
         let movies = try await api.get(movieType: MovieType.top_rated, page: 1)
         
@@ -54,7 +54,7 @@ final class DefaultApiTests: XCTestCase {
         let host = "https://api.themoviedb.org"
         let token = String.random
         
-        let api = DefaultApi(host: host, token: token, httpClient: client)
+        let api = DefaultApi(token: token, httpClient: client)
         
         let movies = try await api.get(movieType: MovieType.top_rated, page: 3)
         
