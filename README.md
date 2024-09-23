@@ -31,27 +31,22 @@ which will output a table of the test results for both platforms.
 Create an account in [TMDB](https://www.themoviedb.org) and get `API Read Access Token` from Settings - [API](https://www.themoviedb.org/settings/api)
 
 ###Android
-Create a kotlin file e.g TMDB.kt under `Android/app/src/main/kotlin/skip/playground` and create a variable like this
-
-```kotlin
-package skip.playground
-
-val tmdbToken = "... your API Read Access Token from TMDB"
-```
+In `local.properties` file, add tmdb token as following
+`TMDB_TOKEN=... your token`
 
 ###iOS
-Create a swift file e.g TMDB.swift file under `Darmin` and create a variable like the following
 
-```swift
-enum TMDB {
-    
-    static let token = "... your API Read Access Token from TMDB"
-}
+Copy `SkipPlaygroud.xcconfig` and name it as something like `SkipPlaygroud_DEGUG.xcconfig` and add tmdb token as following
 
-```
+`TMDB_TOKEN=... your token`   
 
-The reason for creating token outside SkipPlayground folder which is the main module for Skip app is to inject tokens base on Environment such as different targets in iOS and flavours in Android.
-  
+And, update the configuration in Xcode by following these steps
+
+1. Go to your project settings by clicking on the project file in the Project Navigator.
+2. Select the project's `info` tab.
+3. Open `Debug` and update the configuration file as the following. 
+<img alt="Project Configuration" src="../image/xconfig-location.png" style="width: 100%;" />
+
 
 ## Running
 

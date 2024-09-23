@@ -12,7 +12,6 @@
 		496BDBEE2B8A7E9C00C09264 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 496BDBED2B8A7E9C00C09264 /* Localizable.xcstrings */; };
 		499CD43B2AC5B799001AE8D8 /* SkipPlaygroundAppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F90C2B2A52156200F06D93 /* SkipPlaygroundAppMain.swift */; };
 		499CD4402AC5B799001AE8D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49F90C2F2A52156300F06D93 /* Assets.xcassets */; };
-		939700A82C9AC6F90064C970 /* TMDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939700A72C9AC6F90064C970 /* TMDB.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,7 +40,8 @@
 		49F90C2B2A52156200F06D93 /* SkipPlaygroundAppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SkipPlaygroundAppMain.swift; path = Sources/SkipPlaygroundAppMain.swift; sourceTree = SOURCE_ROOT; };
 		49F90C2F2A52156300F06D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49F90C312A52156300F06D93 /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Entitlements.plist; sourceTree = "<group>"; };
-		939700A72C9AC6F90064C970 /* TMDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDB.swift; sourceTree = "<group>"; };
+		9352D3CB2CA11CFF005E69A4 /* SkipPlayground_DEBUG.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SkipPlayground_DEBUG.xcconfig; sourceTree = "<group>"; };
+		93B051322C9D6F5F00E592F8 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,13 +84,14 @@
 				49F90C2A2A52156200F06D93 /* App */,
 				49AB54462B066A7E007B79B2 /* SkipStone */,
 				496BDBEC2B89A47800C09264 /* Products */,
+				93B051322C9D6F5F00E592F8 /* Debug.xcconfig */,
+				9352D3CB2CA11CFF005E69A4 /* SkipPlayground_DEBUG.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
 		49F90C2A2A52156200F06D93 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				939700A72C9AC6F90064C970 /* TMDB.swift */,
 				49F90C2B2A52156200F06D93 /* SkipPlaygroundAppMain.swift */,
 				49F90C2F2A52156300F06D93 /* Assets.xcassets */,
 				49F90C312A52156300F06D93 /* Entitlements.plist */,
@@ -204,7 +205,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				499CD43B2AC5B799001AE8D8 /* SkipPlaygroundAppMain.swift in Sources */,
-				939700A82C9AC6F90064C970 /* TMDB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +233,7 @@
 		};
 		49F90C4B2A52156300F06D93 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 496EB72F2A6AE4DE00C1253B /* SkipPlayground.xcconfig */;
+			baseConfigurationReference = 9352D3CB2CA11CFF005E69A4 /* SkipPlayground_DEBUG.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;

@@ -31,6 +31,10 @@ android {
         // applicationId = PRODUCT_BUNDLE_IDENTIFIER
         // versionCode = CURRENT_PROJECT_VERSION
         // versionName = MARKETING_VERSION
+
+        val properties = Properties()
+        properties.load(project.rootProject.file("local.properties").inputStream())
+        buildConfigField("String", "TMDB_TOKEN", properties.getProperty("TMDB_TOKEN"))
     }
 
     buildFeatures {

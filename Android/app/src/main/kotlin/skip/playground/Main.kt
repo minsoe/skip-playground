@@ -118,6 +118,7 @@ internal fun PresentationRootView(context: ComposeContext) {
     val colorScheme = if (isSystemInDarkTheme()) ColorScheme.dark else ColorScheme.light
     PresentationRoot(defaultColorScheme = colorScheme, context = context) { ctx ->
         val contentContext = ctx.content()
+        val tmdbToken = BuildConfig.TMDB_TOKEN
         Box(modifier = ctx.modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
             RootView(token = tmdbToken).Compose(context = contentContext)
         }

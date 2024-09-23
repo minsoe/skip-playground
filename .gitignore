@@ -47,3 +47,12 @@ Darwin/TMDB.swift
 
 # Other Internal Swift Packages with seperate demo
 /Darwin/Packages
+/ruby
+.ruby-version
+/.bundle
+.arkana.yml
+/ArkanaKeys
+Gemfile
+Gemfile.lock
+Darwin/Debug.xcconfig
+Darwin/SkipPlayground_DEBUG.xcconfig

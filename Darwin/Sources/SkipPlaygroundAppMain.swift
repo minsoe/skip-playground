@@ -4,9 +4,10 @@
 
 import SwiftUI
 import SkipPlayground
+import SwiftDotenv
 
 /// The entry point to the app simply loads the App implementation from SPM module.
 @main struct AppMain: App, SkipPlaygroundApp {
     
-    let token: String = TMDB.token
+    let token: String = ProcessInfo.processInfo.environment["TMDB_TOKEN"] ?? ""
 }
