@@ -45,7 +45,7 @@ And, update the configuration in Xcode by following these steps
 1. Go to your project settings by clicking on the project file in the Project Navigator.
 2. Select the project's `info` tab.
 3. Open `Debug` and update the configuration file as the following. 
-<img alt="Project Configuration" src="../image/xconfig-location.png" style="width: 100%;" />
+<img alt="Project Configuration" src="../images/xconfig-location.png" style="width: 100%;" />
 
 
 ## Running
